@@ -1,0 +1,25 @@
+ul {
+	margin-left: 10px; 	
+}
+
+#inItemText {
+	margin-left: 10px;
+}
+
+li span {
+	padding-left: 5px; 
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+input[type=checkbox]:checked + span {
+	text-decoration: line-through; 
+}
+
+.all {
+	width: 300px;
+	height: 400px;
+	background-color: #f1f4f9;
+	border: 1px solid #2687e9;
+	margin: 0 auto;
+}
