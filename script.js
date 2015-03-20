@@ -11,9 +11,7 @@ function addNewItem(list, itemText) {
 }
 
 var btnNew = document.getElementById("btn");
-btnNew.onclick = function() {
-	itemTextFunction();
-}
+btnNew.onclick = itemTextFunction;
 
 var inItemText = document.getElementById("inItemText");
 inItemText.onkeyup = function(event) {
