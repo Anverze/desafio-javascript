@@ -1,21 +1,17 @@
 ul {
 	margin-left: 10px; 	
 }
-
 #inItemText {
 	margin-left: 10px;
 }
-
 li span {
 	padding-left: 5px; 
 	font-family: sans-serif;
 	font-size: 16px;
 }
-
 input[type=checkbox]:checked + span {
 	text-decoration: line-through; 
 }
-
 .market-list {
 	width: 300px;
 	height: 400px;

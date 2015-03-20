@@ -9,17 +9,14 @@ function addNewItem(list, itemText) {
 	listItem.appendChild(span);
 	list.appendChild(listItem);
 }
-
 var btnNew = document.getElementById("btn");
 btnNew.onclick = itemTextFunction;
-
 var inItemText = document.getElementById("inItemText");
 inItemText.onkeyup = function(event) {
 	if(event.which == 13) {
 		itemTextFunction();
 	}
 }
-
 function itemTextFunction() {
 	var itemText = inItemText.value;
 	addNewItem(document.getElementById("todoList"), itemText);
