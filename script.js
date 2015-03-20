@@ -1,3 +1,6 @@
+var btnNew = document.getElementById("btn");
+var inItemText = document.getElementById("inItemText");
+
 function addNewItem(list, itemText) {
 	var listItem = document.createElement("li");	
 	var checkBox = document.createElement("input");
@@ -10,17 +13,14 @@ function addNewItem(list, itemText) {
 	list.appendChild(listItem);
 }
 
-var btnNew = document.getElementById("btn");
-btnNew.onclick = itemTextFunction;
-
-var inItemText = document.getElementById("inItemText");
 inItemText.onkeyup = function(event) {
 	if(event.which == 13) {
 		itemTextFunction();
 	}
 }
-
 function itemTextFunction() {
 	var itemText = inItemText.value;
 	addNewItem(document.getElementById("todoList"), itemText);
 }
+
+btnNew.onclick = itemTextFunction;
